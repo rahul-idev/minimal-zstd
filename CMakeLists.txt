@@ -12,6 +12,5 @@ add_library(zstd-jni-${NATIVE_VERSION} SHARED ${SOURCES})
 add_definitions("-DZSTD_MULTITHREAD=1")
 add_definitions("-DZSTD_LEGACY_SUPPORT=4")
 CHECK_C_COMPILER_FLAG(-Oz COMPILER_SUPPORTS_OZ)
-if(COMPILER_SUPPORTS_OZ)
-    add_definitions("-Oz")
-endif()
+add_definitions("-Oz")
+
