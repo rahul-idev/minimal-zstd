@@ -18,6 +18,7 @@ android {
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 30
+        consumerProguardFiles 'proguard-rules.pro'
         versionCode 1
         externalNativeBuild {
             cmake {
